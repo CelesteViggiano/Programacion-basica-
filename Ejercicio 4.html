@@ -1,0 +1,30 @@
+<meta charset= "UTF-8">
+<h1> Ejercicio 3 </h1>
+<h3> Programa de calculo de puntos de un equipo de futbol</h3>
+<br>
+<script> 
+ function saltarLinea(){
+        document.write("<br>");
+    }
+     function imprimir(frase) {
+        document.write(frase);
+        saltarLinea(); 
+     }    
+
+var victorias = prompt ("Informe la cantidad de victorias");
+var empates = prompt ("Informe la cantidad de empates");
+var puntosTotal =  (victorias * 3) + empates;
+imprimir ("El total de puntos del equipo es " + puntosTotal);
+// este codigo no funciona porque el PROMPT siempre devuelve STRINGS, es decir, la informacion que el usuario 
+// ingresa en el pop-up siempre sera un texto para JS.
+// para que funcione hay que lograr que el PROMPT devuelva NUMEROS.
+
+var victorias = parseInt (prompt ("Informe la cantidad de victorias"));
+var empates = parseInt (prompt ("Informe la cantidad de empates"));
+var puntosTotal =  (victorias * 3) + empates;
+imprimir ("El total de puntos del equipo es " + puntosTotal);
+// este codigo funciona correctamente porque utilizamos parseInt (que convierte el prompt en un numero)
+</script>
+   
+
+
