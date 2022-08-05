@@ -1,0 +1,30 @@
+<meta charset= "UTF-8">
+<h1> Ejercicio 3 </h1>
+<h3> Programa de calculo IMC</h3>
+<br>
+<script>
+    function saltarLinea(){
+        document.write("<br>");
+    }
+     function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+
+}
+ function calcularImc(peso,altura){
+    return (peso / (altura * altura));
+ }
+
+ pesoInformado = 55
+ alturaInformada = 1.70
+
+ imcCalculado = calcularImc(pesoInformado,alturaInformada);
+ imprimir ("El imc calculado es " + imcCalculado);
+ // como hacer para que el usuario interactue y nos diga cual es su peso o altura
+ // usamos PROMPT en las dev tools del navegador para que se genera un POP UP donde se pida esa informacion
+ pesoInformado = prompt ("informe su peso")
+ alturaInformada = prompt ("informe su altura")
+
+ imcCalculado = calcularImc(pesoInformado,alturaInformada);
+ imprimir ("El imc calculado es " + imcCalculado);
+ </script>
