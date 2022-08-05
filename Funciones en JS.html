@@ -1,0 +1,30 @@
+<meta charset = "UTF-8">
+
+<h2> Aca usamos funciones en JS</h2>
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+    var gasolina = 40;
+    var kmRecorridos = 480;
+    document.write("El auto recorre en total " + kmRecorridos + "km " + "con " + gasolina + " litros de gasolina <br>"); 
+    document.write("Entonces el auto recorre " + (kmRecorridos/gasolina) + " km con un litro de gasolina <br>");
+    saltarLinea();
+    var alcohol = 40;
+     kmRecorridos = 300;
+     document.write("El auto recorre en total " + kmRecorridos + "km " + "con " + alcohol + " litros de alcohol <br>");
+     document.write("Entonces el auto recorre " + (kmRecorridos/alcohol) + " km con un litro de alcohol <br>");
+
+</script>
+
+<h2> Funciones con parametros</h2>
+<script>
+    function imprimir(frase) {
+        document.write(frase);
+    }
+//asi se pueden comentar codigos que no aparecen en el programa
+// las funciones nos ayudan a eliminar lineas y limpiar el codigo
+// tambien se pueden llamar funciones dentro de funciones 
+    imprimir("Esto es una funcion con parametros");
+</script>
+
