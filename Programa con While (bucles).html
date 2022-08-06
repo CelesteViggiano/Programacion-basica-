@@ -1,0 +1,25 @@
+<meta charset= "UTF-8">
+<h1> Ejercicio 5</h1>
+<h3> Años del mundial de FIFA</h3>
+<br>
+<script> 
+function saltarLinea(){
+        document.write("<br>");
+    }
+     function imprimir(frase) {
+        document.write(frase);
+        saltarLinea(); 
+     }    
+var anioMundial = 1930;
+var limite = parseInt(prompt("Ingrese el año limite para calcular"));
+
+
+while(anioMundial <= limite){
+    // el while me permite repetir un codigo hasta salir del bucle 
+    // se necesita una condicion que tenga un fin, de no hacerlo el bucle nunca termina y la maquina puede colapsar
+    imprimir("Hubo mundial de la FIFA en el año " + anioMundial);
+    anioMundial = anioMundial + 4;
+}
+document.write("<br>");
+imprimir("Fin");
+</script>
