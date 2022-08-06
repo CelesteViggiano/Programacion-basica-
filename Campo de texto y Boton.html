@@ -6,11 +6,15 @@
 // sirve para agregar un boton a nuestra pagina
 // no hacen nada ya que pertenecen a HTML que es un lenguaje estatico, pero si los llamamos en JS podemos usarlo en el codigo
 // y darle una funcion
+
 <script>
 
-    var secreto = 5;
+    var secreto = Math.round(Math.random()* 10);
     var input = document.querySelector("input");
                 //este comando trae todo el objeto HTML input al codigo de JS para poder convertirlo en algo dinamico
+    
+ // para que el puntero se posicione automaticamente en el input 
+      
      function verificar(){
         if (parseInt(input.value) == secreto){
             // trae el valor del input y lo convierte a numero
@@ -19,9 +23,16 @@
         } else {
             alert("Usted erró");
         }
-        
+
+    input.value = "";
+    // para que una vez que puse un numero, se borre automaticamente una vez que le de al boton
+    input.focus();
+    // para que el puntero se posicione automaticamente en el input 
+
      }    
+
      var button = document.querySelector("button");
-        button.onclick = verificar; 
+     button.onclick = verificar; 
         // cuando se haga click en el boton llamar a la funcion verificar();
+    
     </script>
