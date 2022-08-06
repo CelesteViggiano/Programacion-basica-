@@ -1,0 +1,27 @@
+<meta charset = "UTF-8">
+<h1> Bucles en JS </h1>
+<script> 
+function saltarLinea(){
+        document.write("<br>");
+    }
+     function imprimir(frase) {
+        document.write(frase);
+        saltarLinea(); 
+     }    
+imprimir("Tabla de multiplicar con WHILE ") 
+     var multiplicador = 1;
+     
+while (multiplicador <= 10){
+    imprimir(5 * multiplicador);
+    multiplicador = multiplicador + 1;
+
+}
+document.write("<br>");
+
+imprimir("Tabla de multiplicar con FOR");
+                                               // tambien se puede usar multiplicador++
+for (var multiplicador = 1;multiplicador <= 10; multiplicador = multiplicador + 1){
+// for (inciador de la variable + condicion + incrementador de variable para salir del loop) { instruccion}
+    imprimir(5 * multiplicador);
+}
+</script>
