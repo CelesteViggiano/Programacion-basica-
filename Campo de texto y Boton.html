@@ -4,12 +4,13 @@
 // sirve para agregar un campo de texto
 <button> Verificar si acertó con el secreto </button>
 // sirve para agregar un boton a nuestra pagina
-
+// no hacen nada ya que pertenecen a HTML que es un lenguaje estatico, pero si los llamamos en JS podemos usarlo en el codigo
+// y darle una funcion
 <script>
 
     var secreto = 5;
     var input = document.querySelector("input");
-                //este comando trae todo el objeto HTML input al codigo de JS
+                //este comando trae todo el objeto HTML input al codigo de JS para poder convertirlo en algo dinamico
      function verificar(){
         if (parseInt(input.value) == secreto){
             // trae el valor del input y lo convierte a numero
