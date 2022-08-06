@@ -1,0 +1,26 @@
+<meta charset = "UTF-8">
+<h1> Campo de texto y boton </h1>
+<input/> 
+// sirve para agregar un campo de texto
+<button> Verificar si acertó con el secreto </button>
+// sirve para agregar un boton a nuestra pagina
+
+<script>
+
+    var secreto = 5;
+    var input = document.querySelector("input");
+                //este comando trae todo el objeto HTML input al codigo de JS
+     function verificar(){
+        if (parseInt(input.value) == secreto){
+            // trae el valor del input y lo convierte a numero
+            alert("Usted acertó");
+
+        } else {
+            alert("Usted erró");
+        }
+        
+     }    
+     var button = document.querySelector("button");
+        button.onclick = verificar; 
+        // cuando se haga click en el boton llamar a la funcion verificar();
+    </script>
