@@ -1,0 +1,29 @@
+<canvas width = "900"  height = "600">
+// la etiqueta canva me delimita un espacio en la pagina donde se puede ingresar graficos  
+// widht es el largo del espacio y height es la altura del espacio 
+</canvas>
+
+<script> 
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+
+    // el pincel sera el encargado de realizar todos los graficos 
+    // pantalla.getContext traera todos los elementos que se graficen en el canva 
+
+    pincel.fillStyle = "#FFFFFF" // esto es una propiedad
+    pincel.fillRect(0,0,900,600); // esto es una funcion
+                    // el primer 0 es donde empieza a pintar el pincel
+
+    pincel.fillStyle = "#3399FF" 
+    pincel.fillRect(0,0,300,600);
+    // comienza en la posicion 0,0 y avanza 200 en la posicion horizontal y 400 en la posicion vertical 
+
+    pincel.fillStyle = "#3399FF" 
+    pincel.fillRect(600,0,300,600);
+
+    pincel.fillStyle = "#FFFF33" 
+    pincel.fillRect(405,250,100,90);
+
+   
+   
+</script>
