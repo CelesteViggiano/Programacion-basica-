@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<h1>Recetas de Armando </h1>
+
+<script>
+
+  var ingredientes = [];
+  var cantidad = parseInt(prompt("¿Cuántos ingredientes vas a añadir?"));
+  var contador = 1;
+
+  while(contador <= cantidad) {
+    var ingrediente = prompt("Informe el ingrediente " + contador);
+    var existe = false;
+    //el valor false es porque es la primera vez que se ingresa el valor
+    for(var posicion = 0; posicion < ingredientes.length; posicion++) {
+      if(ingredientes[posicion] == ingrediente){
+        existe = true;
+    alert("repetido " + ingrediente);
+        break;
+    // si el valor ingresado es igual a algun valor de la lista, se imprime "Repetido" y no se agrega a la lista
+      }
+     }
+     if(existe == false) {
+      ingredientes.push(ingrediente);
+      contador++;
+      // en este caso el ingrediente no existe (false) entonces se agrega a la lista 
+     }
+   }
+   console.log(ingredientes);
+
+</script>
