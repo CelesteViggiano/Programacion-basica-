@@ -1,0 +1,49 @@
+<meta charset = "UTF-8">
+<h1> Campo de texto y boton </h1>
+<input/> 
+// sirve para agregar un campo de texto
+<button> Verificar si acertó con el secreto </button>
+// sirve para agregar un boton a nuestra pagina
+// no hacen nada ya que pertenecen a HTML que es un lenguaje estatico, pero si los llamamos en JS podemos usarlo en el codigo
+// y darle una funcion
+
+<script>
+
+    var secretos = [3, 5, 7, 9]
+                 // esto es un Array   
+    var input = document.querySelector("input");
+                //este comando trae todo el objeto HTML input al codigo de JS para poder convertirlo en algo dinamico
+    
+
+      function verificar(){
+       
+        var encontrado = false;
+
+        for(var posicion = 0; posicion < secretos.length; posicion++){
+                                        // esto me permite traer el tamaño de una lista (todos sus elementos)
+            if (parseInt(input.value) == secretos[posicion]){
+                
+                encontrado = true;
+                alert("Usted acertó");
+                break;
+            }
+
+            if (encontrado == false){
+
+                alert("Usted erró");
+                break;
+            }
+        }
+
+    input.value = "";
+    // para que una vez que puse un numero, se borre automaticamente una vez que le de al boton
+    input.focus();
+    // para que el puntero se posicione automaticamente en el input 
+
+     }    
+
+     var button = document.querySelector("button");
+     button.onclick = verificar; 
+        // cuando se haga click en el boton llamar a la funcion verificar();
+    
+    </script>
