@@ -1,0 +1,36 @@
+<canvas width = "900"  height = "600">
+   
+    </canvas>
+    
+    <script> 
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+    
+       
+    
+        pincel.fillStyle = "#FFFFFF" 
+        pincel.fillRect(0,0,900,600); 
+                       
+    
+        pincel.fillStyle = "#3399FF" 
+        pincel.fillRect(0,0,300,600);
+        
+    
+        pincel.fillStyle = "#3399FF" 
+        pincel.fillRect(600,0,300,600);
+    
+        //pincel.fillStyle = "#FFFF33" 
+        //pincel.beginPath(); //reiniciamos la posicion del pincel 
+        //pincel.moveTo(300,200); // le indicamos al pincel que se mueva a esas coordenadas
+        //pincel.lineTo(200,400); // le indicamos al pincel que realice una linea en esas cordenadas
+        //pincel.lineTo(400,400);
+        //pincel.fill(); //le indicamos al pincel que rellene todo lo que se le pidio arriba
+
+        pincel.fillStyle = "#FFFF33" 
+        pincel.beginPath();
+        pincel.arc(450,300,60,0,2*3.14); //para realizar esferas
+        pincel.fill();
+
+       
+       
+    </script>
