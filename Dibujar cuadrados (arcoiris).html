@@ -1,0 +1,22 @@
+<meta charset = "UTF-8">
+<canvas  width = "600" height = "400"> </canvas>
+<script> 
+
+function dibujarCuadrado(x,y,color) {
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+    pincel.fillStyle = color ;
+    pincel.fillRect(x,y,50,50);
+    pincel.strokeStyle = "black"; //propiedad del marco o contorno
+    pincel.strokeRect(x,y,50,50); // coordenadas y dimensiones del marco o contorno
+
+}
+
+dibujarCuadrado(0,50,"red");
+dibujarCuadrado(50,50,"orange");
+dibujarCuadrado(100,50,"yellow");
+dibujarCuadrado(150,50,"green");
+dibujarCuadrado(200,50,"blue");
+dibujarCuadrado(250,50,"violet");
+
+</script>
