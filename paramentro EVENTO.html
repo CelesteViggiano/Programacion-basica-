@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+<canvas width= "600" height= "400"></canvas>
+
+<script> 
+
+var pantalla = document.querySelector("canvas");
+var pincel = pantalla.getContext("2d");
+
+pincel.fillStyle = "grey";
+pincel.fillRect(0,0,600,400);
+
+function exibirAlerta(evento){
+    var x = evento.pageX - pantalla.offsetLeft; // offsetLeft es el espacio que sobra entre la pagina y el canvas
+        //  recopila la coordenadas del mouse en esa pagina
+    var y = evento.pageY - pantalla.offsetTop; 
+    console.log(evento);
+    // lo que quiero recuperar en la consola del navegador
+
+    alert("Usted hizo un clic");
+//esta funcion permite ver el historial de todos los movimientos que hizo el usuario en la pagina
+}
+
+function dibujarCirculo(evento){
+    var x = evento.pageX - pantalla.offsetLeft;
+    var y = evento.pageY - pantalla.offsetTop;
+
+    pincel.fillStyle = "red";
+    pincel.beginPath();
+    pincel.arc(x,y,10,0,2*3.14);
+    pincel.fill();
+    console.log(x + "," + y);
+}
+
+pantalla.onclick = dibujarCirculo;
+
+//pantalla.onclick = exibirAlerta;
+//cuando se haga click en la pantalla mostra el alert
+
+</script>
