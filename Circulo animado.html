@@ -1,0 +1,35 @@
+<meta charset = "UTF-8">
+<canvas  width= "600" height= "400"></canvas>
+<script>
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+    pincel.fillStyle = "lightgray";
+    pincel.fillRect(0,0,600,400);
+
+    function crearCirculo(x,y,radio){
+        pincel.fillStyle = "red";
+        pincel.beginPath();
+        pincel.arc(x,y,radio,0,2*Math.PI);
+        pincel.fill();
+    }
+
+    function limpiarPantalla(){
+
+        pincel.clearRect(0,0,600,400); //este comando limpia todo el canvas 
+    }
+
+    var x = 0
+   
+    function actualizarPantalla(){
+        limpiarPantalla();
+        crearCirculo(x,20,10);
+        x++;
+
+    }
+   
+    setInterval(actualizarPantalla,100);
+    //este comando sirve para esteblecer un intervalo de tiempo
+    //ejemplo; todo lo que vaya entre parentesis se reproducira en ese intervalo
+    //el intervalo esta en milisegundos
+
+</script>
