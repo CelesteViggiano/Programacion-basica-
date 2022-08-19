@@ -1,0 +1,38 @@
+body {
+    background-color: #77aca2
+}
+
+#bannerprincipal{
+    width: 100%;
+    
+
+}
+
+h1 {
+    background-color:#468189 ;
+    line-height: 3cm;
+    text-align: center;
+    border: solid #031926;
+    
+}
+
+
+p {
+    text-align: center;
+    font-size: 30px; 
+    color: #031926;
+}
+/* esto es un selector */
+#mision{
+    font-size: 30px;
+    text-align: center;
+}
+/* asi se referencia una clase*/
+
+#segundotitulo{
+    font-size: 50px;
+}
+.items {
+    font-style: italic;
+    font-size: 30px;
+}
