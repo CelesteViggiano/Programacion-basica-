@@ -1,0 +1,62 @@
+body {
+    background-color: #c999af
+}
+
+.tituloPrincipal{
+    padding-left: 5%;
+    font-size: 45px;
+}
+.bloque1{
+    background-color: #e3b1c8;
+    padding: 20px; /* espaciamiento interno del bloque, cuanto espacio ocupa en la pag */
+}
+#bannerprincipal{
+    width: 100%;
+    
+
+}
+
+h2 {
+    background: color #5a3847; ;
+    line-height: 3cm;
+    text-align: center;
+    border: solid #ffffff;
+    font-size: 30px;
+}
+
+
+p {
+    text-align: center;
+    font-size: 30px; 
+    color: #ffffff;
+}
+/* esto es un selector */
+#mision{
+    font-size: 30px;
+    text-align: center;
+}
+
+.bloque2{
+    background-color: #fdcae1;
+    padding: 30px;
+}
+
+#tercerTitulo{
+    font-size: 50px;
+}
+
+ul{
+    display: inline-block; /* le decimos a la lista que ocupe solo la linea donde esta escrita */
+    vertical-align: top;
+    width: 40%;
+    margin: 15px;
+}
+
+.items { /* asi se referencia una clase*/
+    font-style: italic;
+    font-size: 30px;
+}
+
+#fotoBloque2{
+    width: 50%;
+}
