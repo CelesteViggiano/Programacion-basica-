@@ -1,5 +1,17 @@
-#Barra {
+header {
     background-color:  #c999af;
+    padding: 50px 0px;
+}
+.barraDeNavegacion {
+    width: 1365px;
+    position: relative;
+    margin: 0 auto;
+
+}
+nav {
+    position: absolute;
+    top: 40px;
+    right: 20px;
 }
 
 nav li {
