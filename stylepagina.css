@@ -31,6 +31,11 @@ nav a {
     font-size: 22px;
     text-decoration: none;
 }
+    /* el comando hover captura los eventos del mouse */
+nav a:hover{
+    color:#a36380 ;
+    text-decoration: underline;
+}
 
 .loQueHago{
     width: 940px;
@@ -48,6 +53,10 @@ nav a {
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 10px;
+}
+
+.loQueHago li:hover{
+    border-color: #a36380;
 }
 
 .loQueHago h2{
