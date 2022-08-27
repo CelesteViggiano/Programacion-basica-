@@ -43,14 +43,17 @@ nav a {
     text-align: center;
     width: 40%;
     vertical-align: top;
-    margin: 0 1.5%;
+    margin: 0 4.5%;
     padding: 30px 20px;
     box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 .loQueHago h2{
     font-size: 30px;
     font-weight: bold;
+    padding: 5px;
 }
 
 #imagen1{
