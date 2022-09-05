@@ -80,3 +80,8 @@ footer{
     background: url(footer.jpg);
     padding: 50px 0;
 }
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
