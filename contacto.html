@@ -27,16 +27,16 @@
         <main>
             <form>
                 <label for= "nombreyapellido"> Nombre y Apellido </label>
-                <input type = "text" id= "nombreyapellido">
+                <input type = "text" id= "nombreyapellido" class= "input-principal" required>
 
                 <label for= "correoelectronico"> Correo electrónico </label>
-                <input type="text" id= "correoelectronico">
+                <input type="email" id= "correoelectronico" class= "input-principal" required placeholder= "email@dominio.com">
                 
                 <label for= "telefono"> Telefono </label>
-                <input type="text" id= "telefono">
+                <input type="tel" id= "telefono" class= "input-principal" required placeholder= "(XX) XXXX-XXXX">
 
                 <label for= "mensaje"> Mensaje </label>
-                <textarea cols= "70" rows= "10" id= "mensaje"></textarea>
+                <textarea cols= "70" rows= "10" id= "mensaje" class= "input-principal" required></textarea>
 
                 <div>
 
@@ -53,7 +53,7 @@
 
                 </div>
 
-                <input type= "submit">
+                <input type= "submit" >
             </form>
         </main>
 
