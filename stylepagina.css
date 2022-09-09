@@ -103,3 +103,20 @@ form label,form legend{
     width: 50%;
 }
 
+.enviar{
+    width: 55%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color:#957dad ;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.enviar:hover{
+    background-color: #855eac;
+    transform: scale(1.1);
+}
